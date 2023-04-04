@@ -9,8 +9,8 @@ const About = () => {
         variants={staggerContainer}
         initial='show'
         whileInView='hidden'
-        className={`${styles.flexCenter} lg:flex-row flex-col justify-around gap-20 h-[500px]`}>
-        <div className="relative self-start md:left-[50px]">
+        className={`${styles.flexCenter} lg:flex-row flex-col justify-around gap-20 h-[800px]`}>
+        <div className="relative self-start lg:self-start lg:right-[0px] self-center right-[100px]">
           <motion.img 
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -39,7 +39,11 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: 'spring', delay: 1.5 }}
             viewport={{ once: true }}
-            className="text-[15px] leading-8 lg:mt-[80px]">Hey guys! I'm a UCSD student from South Korea. I started serving for Air Force in 2021 until now, and I started learning web development here. Now, it is my most confident programming skills compared to C++, Python, and Java I learned in college. Web development is very exciting for me because I get to combine my programming skills with my artistic skills! Even though I haven't professionally learned web development, the passion of designing beautiful websites brought me until now.</motion.h2>
+            className="text-[15px] leading-8 lg:mt-[80px]">  My name is Joon and I'm a student at UCSD from South Korea. I began my journey in web development while serving in the Air Force in 2021 and it quickly became my favorite programming skill, surpassing my previous experiences with C++, Python, and Java in college. <br/><br/>
+
+  What I find particularly exciting about web development is the way it allows me to combine my programming skills with my artistic abilities. Even though I don't have formal training in this field, my passion for designing beautiful websites has motivated me to pursue this path. <br/><br/>
+
+  As I continue to delve deeper into the backend, I am steadily improving my skills to become a better full-stack developer day by day. I am thrilled to showcase my work and skills on this portfolio website. Thank you for stopping by!</motion.h2>
         </div>
       </motion.div>
       

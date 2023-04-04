@@ -1,6 +1,7 @@
 import {socials} from '../constants';
 import {motion} from 'framer-motion';
 import {slideIn, staggerContainer} from '../utils/motion';
+import Image from 'next/image';
 
 const Contact = () => {
   return (
@@ -8,7 +9,7 @@ const Contact = () => {
       variants={staggerContainer(0, 1)}
       initial="hidden"
       animate="show"
-      className="fixed left-[6px] bottom-[10px] flex flex-col p-10 gap-5 z-10">
+      className="fixed left-[6px] bottom-[10px] sm:flex hidden flex-col p-10 gap-5 z-10">
       {socials.map((social, index) => (
         <motion.a 
           initial={{ x: -100, opacity: 0 }}
@@ -17,10 +18,11 @@ const Contact = () => {
           href={social.link} target="_blank" 
           key={social.name}>
           <div className="">
-            <img
+            <Image
               src={social.imgUrl} 
               alt={social.name}
-              className="w-[30px] "/>
+              width={30}
+              height={30}/>
           </div>
         </motion.a>
       ))}

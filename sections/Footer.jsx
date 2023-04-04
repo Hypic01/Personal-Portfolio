@@ -1,4 +1,5 @@
 import {socials} from '../constants';
+import Image from 'next/image';
 
 const Footer = () => {
   return (

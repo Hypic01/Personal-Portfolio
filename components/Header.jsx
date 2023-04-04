@@ -4,6 +4,7 @@ import {links} from '../constants';
 import styles from '../styles';
 import { motion } from "framer-motion";
 import {useState} from 'react';
+import Image from 'next/image';
 
 const Header = () => {
 
@@ -16,10 +17,11 @@ const Header = () => {
   return (
     <div className="flex w-full justify-between lg:px-32 sm:px-16 px-8 py-8 fixed top-0 z-30 items-center">
       <a href="#Hero">
-        <img
+        <Image
           src="/logo.png"
           alt="logo"
-          className="w-[60px]"/>
+          width={60}
+          height={60}/>
       </a>
 
 {/*         {links.map((link) => (

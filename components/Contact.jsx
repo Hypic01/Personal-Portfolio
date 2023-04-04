@@ -16,8 +16,9 @@ const Contact = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 2 + 0.3 * index }}
           href={social.link} target="_blank" 
-          key={social.name}>
-          <div className="">
+          key={social.name}
+          >
+          <div className="transition-all hover:scale-105">
             <Image
               src={social.imgUrl} 
               alt={social.name}

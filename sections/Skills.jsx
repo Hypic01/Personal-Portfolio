@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const Skills = () => {
   return (
-    <section className="relative py-32 sm:px-16 px-6 flex flex-col items-center">
+    <section id="Skills" className="relative py-32 sm:px-16 px-6 flex flex-col items-center">
       <motion.h1 className="text-[60px] mb-32 font-semibold">My skills.</motion.h1>
       <div className="flex md:flex-row flex-col justify-between w-[80%] max-w-6xl h-max md:items-start items-center md:gap-0 gap-32">
         <motion.div className="grid gap-6 md:w-5/12 md:grid-cols-3 grid-cols-2 items-start text-center gap-y-12">

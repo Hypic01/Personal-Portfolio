@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <section className="relative md:py-32 md:px-48 py-16 px-16 bg-sky-300 z-20 flex leading-8 ">
+    <section id="Footer" className="relative md:py-32 md:px-48 py-16 px-16 bg-sky-300 z-20 flex leading-8 ">
       <div className="flex flex-col gap-10 w-full">
         <div className="flex flex-row gap-10 ">
           <div>

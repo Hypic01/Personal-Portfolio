@@ -6,7 +6,7 @@ import { slideIn, fadeIn, staggerContainer } from '../utils/motion';
 
 const Hero = () => {
   return (
-    <section className="flex h-screen justify-around items-center py-32 sm:px-16 px-6 md:flex-row flex-col" id="Hero">
+    <section className="flex h-screen justify-around items-center py-64 sm:px-16 px-6 md:flex-row flex-col" id="Hero">
       <motion.div 
         variants={staggerContainer}
         initial="hidden"

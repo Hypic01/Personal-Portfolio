@@ -20,6 +20,7 @@ const Header = () => {
         <Image
           src="/logo.png"
           alt="logo"
+          className="transition-shadow hover:shadow-lg"
           width={60}
           height={60}/>
       </a>
